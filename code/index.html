@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="frontend, front-end, front end, desenvolvedor, dev, designer, ui, ux, portfolio, portifólio, web, analise, desenvolvimento, sistemas"
+    />
+    <meta
+      name="description"
+      content="Portfolio de Rafael Teixeira Desenvolvedor Front End e Designer"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Rafael Teixeira - Portfolio</title>
+  </head>
+  <body>
+    <div id="headerDiv">
+      <header id="bar" class="bar">
+        <a id="logoAnchor" href="#"
+          ><p class="font headerFont" id="logo">
+            &#60; <span class="blackFont">Rafael Teixeira</span> /&#62;
+          </p></a
+        >
+        <button id="nlMode" class="button nlMode" onclick="handleColors()">
+          🌞🌙
+        </button>
+        <div id="linksDiv">
+          <ul
+            class="font headerFont menuButtons"
+            style="display: flex; justify-content: space-around"
+          >
+            <li>
+              <a class="headerLink blackFont" href="#aboutMe">Sobre mim</a>
+            </li>
+            <li>
+              <a class="headerLink blackFont" href="#skills">Habilidades</a>
+            </li>
+            <li>
+              <a class="headerLink blackFont" href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a class="headerLink blackFont" href="#contacts">Contatos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu" id="menu" onclick="handleMenu()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </header>
+    </div>
+    <main>
+      <p id="aux" style="color: white"></p>
+      <section class="sectionHeight">
+        <!--Olá-->
+        <div class="contentDiv">
+          <h1 style="display: none">Desenvolvedor Dev Front End React</h1>
+          <p id="ola" class="title font blackFont">Olá...</p>
+          <p class="text font">
+            Meu nome é <span class="brownFont">Rafael Teixeira</span><br />e eu
+            sou <span class="blueFont">Dev Front-End React</span><br />&
+            <span class="begeFont">Designer.</span>
+          </p>
+          <a
+            href="https://rxresu.me/pt/rafaelteixeiradesigner/frontend"
+            target="_blank"
+            ><button class="button">Currículo</button></a
+          >
+        </div>
+        <div class="imageDiv">
+          <img
+            class="ilust"
+            src="../assets/cadeiraMesaNotebook.png"
+            alt="ilustração 3d escritório"
+          />
+        </div>
+      </section>
+      <section id="aboutMe" class="sectionHeight">
+        <!--Sobre mim-->
+        <div class="contentDiv">
+          <h2 style="display: none">Análise e Desenvolvimento de Sistemas</h2>
+          <p class="title font blackFont">Sobre mim</p>
+          <p class="text font">
+            Estudante de
+            <span class="blueFont">Análise e Desenvolvimento de Sistemas</span>
+            pela Faculdade de Educação Tecnológica do Estado do RJ - FAETERJ.<br />Amante
+            de <span class="salmonFont">Design,</span
+            ><span id="deepBlueFont"> Tecnologia,</span> Leitura, Verão,
+            Natureza, <span class="yellowFont">Minimalismo,</span> e Esportes.
+          </p>
+          <a href="https://www.linkedin.com/in/rafaelcptx/" target="_blank"
+            ><button class="button">LinkedIn</button></a
+          >
+        </div>
+        <div class="imageDiv">
+          <img
+            id="foguete"
+            class="ilust"
+            src="../assets/foguete.png"
+            alt="ilustração 3d foguete"
+          />
+        </div>
+      </section>
+      <section id="skills" class="sectionHeight">
+        <!--Habilidades-->
+        <div class="contentDiv skillsDiv">
+          <div class="hardDiv">
+            <h3 class="title font subtitle blackFont">Hard Skills</h3>
+            <ul class="text font subfont">
+              <li class="deepGreyFont">
+                HTML<span style="color: grey"> (semântico)</span>
+              </li>
+              <li class="deepGreyFont">
+                CSS<span style="color: grey"> (responsivo)</span>
+              </li>
+              <li class="yellowFont">JavaScript (es6)</li>
+              <li class="blueFont">React.Js</li>
+              <li class="deepGreyFont">Git/GitHub</li>
+              <li class="deepGreyFont">Inglês Avançado</li>
+              <li class="salmonFont">Design</li>
+            </ul>
+            <a href="https://github.com/rafaelcptx" target="_blank"
+              ><button class="button">GitHub</button></a
+            >
+          </div>
+          <div class="softDiv">
+            <h3 class="title font subtitle blackFont">Soft Skills</h3>
+            <ul class="text font subfont">
+              <li>Empático</li>
+              <li class="greenFont">Criativo</li>
+              <li>Comunicativo</li>
+              <li>Determinado</li>
+            </ul>
+          </div>
+        </div>
+        <div class="imageDiv">
+          <img
+            id="puzzle"
+            class="ilust"
+            src="../assets/puzzle.png"
+            alt="ilustração 3d quebra cabeça"
+          />
+        </div>
+      </section>
+      <section id="projects" class="sectionHeight">
+        <!--Projetos-->
+        <div class="contentDiv">
+          <h3 class="font title blackFont">Projetos</h3>
+        </div>
+        <div id="projectsDiv">
+          <div class="project">
+            <img src="../assets/test.png" alt="projeto1" />
+          </div>
+          <div class="project">
+            <img src="../assets/test.png" alt="projeto2" />
+          </div>
+          <div class="project">
+            <img src="../assets/test.png" alt="projeto3" />
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="sectionHeight">
+        <!--Contatos-->
+        <div class="contentDiv">
+          <h3 class="title font blackFont">Contatos</h3>
+          <ul class="font subfont">
+            <li class="contatosLi redFont">
+              Email:<span class="deepGreyFont">
+                rafaelteixeiradesigner@gmail.com</span
+              >
+            </li>
+            <li class="contatosLi" style="color: #2ca9f2">
+              LinkedIn:
+              <span class="deepGreyFont">linkedin.com/in/rafaelcptx/</span>
+            </li>
+            <li class="contatosLi blackFont">
+              GitHub:<span class="deepGreyFont"> github.com/rafaelcptx</span>
+            </li>
+            <li class="contatosLi" style="color: #21ad4c">
+              Telefone:<span class="deepGreyFont"> (21) 97323-7521</span>
+            </li>
+          </ul>
+          <a href="https://linktr.ee/rafaelcptx" target="_blank"
+            ><button class="button">Acessar demais links...</button></a
+          >
+        </div>
+        <div class="imageDiv">
+          <img
+            class="ilust"
+            src="../assets/celular.png"
+            alt="ilustração 3d celular"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="bar">
+      <p class="font deepGreyFont">Feito por Rafael Teixeira.</p>
+      <a style="text-decoration: none" href="#"
+        ><p id="topAnchor" class="font headerLink">Início</p></a
+      >
+      <p class="font deepGreyFont">Última atualização: dez/2022.</p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
