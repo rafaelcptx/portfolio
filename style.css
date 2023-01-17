@@ -308,10 +308,18 @@ footer.bar {
 
 .project {
   height: 60vh;
+  border: black solid 1px;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .project:hover {
   cursor: pointer;
+}
+
+.projectImg {
+  height: 100%;
+  width: 100%;
 }
 
 /* ====================================================================================================== */
@@ -328,7 +336,6 @@ footer.bar {
   .project {
     margin-bottom: 30px;
     height: 60vh;
-    background-color: #212b41;
   }
 
   .ilust:first-of-type {
