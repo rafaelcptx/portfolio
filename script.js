@@ -1,6 +1,7 @@
-/* window.sr = ScrollReveal({reset: true});
-sr.reveal('.contentDiv', {duration: 2000})
-sr.reveal('.imageDiv', {duration: 2000}) */
+window.sr = ScrollReveal({ reset: true });
+sr.reveal(".contentDiv", { duration: 2000 });
+sr.reveal(".imageDiv", { duration: 2000 });
+sr.reveal(".project", { duration: 2000 });
 
 function handleMenu() {
   let menuMenu = document.getElementById("menu");
