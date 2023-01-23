@@ -3,6 +3,8 @@ sr.reveal(".contentDiv", { duration: 2000 });
 sr.reveal(".imageDiv", { duration: 2000 });
 sr.reveal(".project", { duration: 2000 });
 
+handleColors();
+
 function handleColors() {
   let header = document.getElementById("headerDiv");
   let blackElements = document.getElementsByClassName("blackFont");
