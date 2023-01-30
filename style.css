@@ -277,6 +277,8 @@ footer.bar {
   border: black solid 1px;
   background-color: white;
   border-radius: 20px;
+  text-align: center;
+  margin: 20px 0px;
 }
 
 .project:hover {
