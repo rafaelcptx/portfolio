@@ -268,11 +268,12 @@ footer.bar {
 
 #projects {
   flex-direction: column;
+  height: auto;
 }
 
 #projectsDiv {
-  display: flex;
-  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
   justify-content: space-around;
 }
 
@@ -282,7 +283,7 @@ footer.bar {
   background-color: white;
   border-radius: 20px;
   text-align: center;
-  margin: 20px 0px;
+  margin: 50px 0px;
 }
 
 .project:hover {
@@ -302,7 +303,8 @@ footer.bar {
   }
 
   #projectsDiv {
-    flex-direction: column;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 60px;
   }
 
   .project:first-of-type {
@@ -458,5 +460,11 @@ footer.bar {
 
   .contentDiv .font {
     font-size: 30px;
+  }
+}
+
+@media (max-width: 675px) {
+  #projectsDiv {
+    grid-template-columns: repeat(1, auto);
   }
 }
